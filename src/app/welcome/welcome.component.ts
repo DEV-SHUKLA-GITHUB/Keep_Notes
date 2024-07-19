@@ -20,7 +20,7 @@ export class WelcomeComponent implements OnInit {
     private data: DataService,
     private auth: AuthService,
     private _snackBar: MatSnackBar
-  ) {}
+  ) {} 
   ngOnInit(): void {
     this.welcomeForm = new FormGroup({
       emailAdd: new FormControl('', [Validators.required, Validators.email]),
